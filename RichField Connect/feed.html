@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richfield Connect - Feed</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" href="logo richfried.jpg">
+
+    <!--Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@400..900&family=DM+Serif+Display:ital@0;1&family=Diplomata&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">    <title>RichField Connect - Home</title>
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <a href="index.html" class="logo"><img src="logo richfried.jpg" alt="Richfield Logo">Richfield Connect</a>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
+            <li><a href="signup.html"><i class="fa-solid fa-user-plus"></i> Sign Up</a></li>
+            <li><a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a></li>
+            <li><a href="feed.html" class="active"><i class="fa-solid fa-newspaper"></i> Feed</a></li>
+        </ul>
+    </nav>
+
+    
+    <div class="page-header">
+        <h1><i class="fa-solid fa-newspaper"></i> Student Feed</h1>
+        <p>Share your thoughts with the Richfield community</p>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <div class="feed-wrapper">
+
+            <!-- LEFT SIDE - CREATE POST + POSTS -->
+            <div class="feed-main">
+
+                <!-- CREATE POST BOX -->
+                <div class="create-post-box animate-up">
+                    <h2>
+                        <i class="fa-solid fa-pen-to-square"></i> 
+                        Create a Post
+                    </h2>
+
+                    <!-- WHO IS POSTING -->
+                    <p class="posting-as">
+                        <i class="fa-solid fa-user"></i> 
+                        Posting as: <span id="postingAsName">Guest</span>
+                    </p>
+
+                    <!-- POST TEXT AREA -->
+                    <div class="form-group">
+                        <textarea
+                            id="postContent"
+                            placeholder="What is on your mind?"
+                            rows="4"
+                        ></textarea>
+                        <!-- Error message if post is empty -->
+                        <span class="error-msg" id="postError"></span>
+                    </div>
+
+                    <!-- POST BUTTON -->
+                    <button id="postBtn" class="btn">
+                        <i class="fa-solid fa-paper-plane"></i> Post
+                    </button>
+
+                </div>
+
+                <!-- POSTS FEED AREA -->
+                <div class="posts-section animate-up">
+                    <h2>
+                        <i class="fa-solid fa-list"></i> 
+                        Recent Posts
+                    </h2>
+
+                    <!-- ALL POSTS GO HERE - added by JavaScript -->
+                    <div id="postsContainer">
+
+                        <!-- EMPTY STATE - shows when no posts exist -->
+                        <div class="empty-state animate-up" id="emptyState">
+                            <i class="fa-solid fa-comment-slash"></i>
+                            <p>No posts yet. Be the first to post!</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDE - SIDEBAR -->
+            <div class="feed-sidebar">
+
+                <!-- MINI PROFILE CARD -->
+                <div class="sidebar-card animate-up">
+                    <h3>
+                        <i class="fa-solid fa-user"></i> My Profile
+                    </h3>
+                    <div class="sidebar-avatar">
+                        <i class="fa-solid fa-user-circle"></i>
+                    </div>
+                    <!-- filled by JavaScript -->
+                    <p id="sidebarName">Guest</p>
+                    <p id="sidebarCampus" class="sidebar-campus">
+                        <i class="fa-solid fa-location-dot"></i> Campus
+                    </p>
+                    <a href="profile.html" class="btn sidebar-btn">
+                        <i class="fa-solid fa-user"></i> View Profile
+                    </a>
+                </div>
+
+                <!-- STATS CARD -->
+                <div class="sidebar-card animate-up">
+                    <h3>
+                        <i class="fa-solid fa-chart-simple"></i> My Stats
+                    </h3>
+                    <div class="sidebar-stats">
+
+                        <div class="sidebar-stat">
+                            <span id="sidebarPostCount">0</span>
+                            <p>Posts</p>
+                        </div>
+
+                        <div class="sidebar-stat">
+                            <span id="sidebarLikeCount">0</span>
+                            <p>Likes</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- TIPS CARD -->
+                <div class="sidebar-card animate-up">
+                    <h3>
+                        <i class="fa-solid fa-lightbulb"></i> Tips
+                    </h3>
+                    <ul class="tips-list">
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Be respectful to peers
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Share academic content
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Keep posts professional
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Engage with others posts
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- FOOTER -->
+<footer>
+
+    <!-- TOP SECTION - columns -->
+    <div class="footer-top">
+
+        <!-- COLUMN 1 - About -->
+        <div class="footer-col">
+            <h4>
+                <i class="fa-solid fa-graduation-cap"></i> 
+                Richfield Connect
+            </h4>
+            <p>Your secure academic social platform. Connecting students across all Richfield campuses.</p>
+        </div>
+
+        <!-- COLUMN 2 - Quick Links -->
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
+                <li><a href="signup.html"><i class="fa-solid fa-user-plus"></i> Sign Up</a></li>
+                <li><a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a></li>
+                <li><a href="feed.html"><i class="fa-solid fa-newspaper"></i> Feed</a></li>
+            </ul>
+        </div>
+
+        <!-- COLUMN 3 - Contact -->
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <ul>
+                <li><i class="fa-solid fa-globe"></i> richfield.ac.za</li>
+                <li><i class="fa-solid fa-location-dot"></i> Cape Town Campus</li>
+                <li><i class="fa-solid fa-envelope"></i> info@richfield.ac.za</li>
+                <li><i class="fa-solid fa-phone"></i> 0800 RICHFIELD</li>
+            </ul>
+        </div>
+
+        <!-- COLUMN 4 - Social Media -->
+        <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/thisisrichfield/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/thisisrichfield/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://x.com/thisisrichfield" target="_blank">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/school/richfieldeducation/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://www.youtube.com/user/ThePCTBC" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- BOTTOM BAR -->
+    <div class="footer-bottom">
+        <p>&copy; 2025 Richfield Connect. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms & Conditions</a>
+        </p>
+    </div>
+
+</footer>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- FEED JAVASCRIPT -->
+    <script src="javascript/feed.js"></script>
+
+</body>
+</html>

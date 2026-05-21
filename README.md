@@ -60,15 +60,15 @@ Download all files, keep them in the same folder, and open index.html in any bro
 ---
 
 ## Author
-- Name:
-- Student Number:
-- Campus:
-- Module:
+- Name: Pride Pafoule
+- Student Number: 402603157
+- Campus: cape town
+- Module: webtech 511A
 
 how the website looks
 
-<img width="1350" height="610" alt="Screenshot 2026-05-21 132949" src="https://github.com/user-attachments/assets/94c343f4-06e0-4e17-b9de-e0fae44f7c8b" />
-<img width="1345" height="600" alt="Screenshot 2026-05-21 132915" src="https://github.com/user-attachments/assets/8cd03e7d-61de-4ca3-8f9d-2918cf7eebb0" />
-<img width="1356" height="606" alt="Screenshot 2026-05-21 132847" src="https://github.com/user-attachments/assets/9abecdfa-dc36-464b-99a3-d9537c3d3ed7" />
-<img width="1364" height="618" alt="Screenshot 2026-05-21 132816" src="https://github.com/user-attachments/assets/3ccfca01-4399-48ca-8b58-05f15879cca3" />
-<img width="1363" height="619" alt="Screenshot 2026-05-21 132741" src="https://github.com/user-attachments/assets/a8eb8ca0-8ce3-4f4a-88d9-296d8eb5ddd3" />
+<img width="1359" height="607" alt="Screenshot 2026-05-21 134006" src="https://github.com/user-attachments/assets/fdfe0eb5-c0bb-48ab-8a1e-3b68c058ef69" />
+<img width="1345" height="600" alt="Screenshot 2026-05-21 132915" src="https://github.com/user-attachments/assets/6970e05b-9b12-45cf-ae37-8b763c459ed5" />
+<img width="1356" height="606" alt="Screenshot 2026-05-21 132847" src="https://github.com/user-attachments/assets/28b33342-7a41-4225-95ad-52ab428068c2" />
+<img width="1364" height="618" alt="Screenshot 2026-05-21 132816" src="https://github.com/user-attachments/assets/6215e9ff-72c2-498b-9ac8-8e7fed0a932e" />
+<img width="1363" height="619" alt="Screenshot 2026-05-21 132741" src="https://github.com/user-attachments/assets/ba5b93ce-c1ef-4210-b182-8a61bfd8e63b" />
